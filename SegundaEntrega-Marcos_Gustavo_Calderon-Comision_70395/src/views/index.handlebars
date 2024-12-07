@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Websocket</title>
+</head>
+<body>
+  <div class="container">
+    <main class="chat-section">
+      <aside class="users-list">
+        <div id="usersList">
+          <!-- Los usuarios conectados se mostrarán aquí -->
+        </div>
+      </aside>
+      <h1 class="titleChat">Chat Websocket</h1>
+      <div id="status" class="connected">
+        <h3 class="conectado">Online</h3>
+      </div>
+      <section class="chat-area">
+        <div class="messages" id="messages">
+          <!-- Los mensajes aparecerán aquí -->
+          <p id="messageLogs"></p>
+        </div>
+        
+        <div class="chat-input">
+          <input type="text" placeholder="Escribe tu mensaje..." id="chatBox">
+          <button onclick="sendMessage()">Enviar</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/index.js"></script>
+</body>
+</html>

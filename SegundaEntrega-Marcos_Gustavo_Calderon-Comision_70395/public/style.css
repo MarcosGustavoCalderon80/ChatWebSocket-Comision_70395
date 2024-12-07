@@ -1,0 +1,109 @@
+:root {
+    --primary: #ff6b6b;
+    --secondary: #4ecdc4;
+    --dark: #1475e3;
+    --light: #f7f7f7;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--light);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .titleChat {
+    font-size: 2.5rem;
+    color: var(--dark);
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+  
+  .connected {
+    background: #4CAF50;
+    color: white;
+  }
+
+  h3.conectado {
+    color: white;
+    font-weight: 500;
+    margin: 5px;
+  }
+  .nameUser {
+    font-weight:lighter;
+    margin-bottom: 2px;
+    color: #0c1b2b;
+  }
+  .chat-section {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  .users-list {
+    background: var(--dark);
+    color: white;
+    padding: 1rem;
+  }
+  
+  .chat-area {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .messages {
+    flex-grow: 1;
+    min-height: 400px;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    overflow-y: auto;
+  }
+  
+  .message {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    max-width: 70%;
+  }
+  
+  .chat-input {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .chat-input input {
+    flex-grow: 1;
+    padding: 0.8rem;
+    border: 2px solid var(--secondary);
+    border-radius: 25px;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .chat-input button {
+    padding: 0.8rem 1.5rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .chat-input button:hover {
+    transform: scale(1.05);
+  }
